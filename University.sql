@@ -157,3 +157,7 @@ Ans: Indexes play a pivotal role in optimizing database performance by facilitat
 
 12. Explain the concept of a PostgreSQL view and how it differs from a table.
 ans: A view is a named query stored in the PostgreSQL database server. A view is defined based on one or more tables which are known as base tables, and the query that defines the view is referred to as a defining query. After creating a view, you can query data from it as you would from a regular table. Behind the scenes, PostgreSQL will rewrite the query against the view and its defining query, executing it to retrieve data from the base tables. Views do not store data except the materialized views. In PostgreSQL, you can create special views called materialized views that store data physically and periodically refresh it from the base tables. The materialized views are handy in various scenarios, providing faster data access to a remote server and serving as an effective caching mechanism.
+Advantages of PostgreSQL views
+1) Simplifying complex queries
+2) Security and access control
+3) Logical data independence
