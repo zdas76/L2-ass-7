@@ -150,5 +150,10 @@ ans: Aggregation refers to the concept where a specific outcome is formed from t
  a. Use SUM() Function on Table’s Data : SELECT SUM(COLUMN Name) AS 'column name which add extra column in table' FROM 'COLUMN Name';
  b. COUNT() function : SELECT COUNT(*) FROM tab_name;
  c. AVG() functions: SELECT AVG(COLUMN Name) FROM 'COLUMN Name';
-d. MAX() Function : SELECT MAX(COLUMN Name) FROM 'COLUMN Name';
+ d. MAX() Function : SELECT MAX(COLUMN Name) FROM 'COLUMN Name';
 
+11. What is the purpose of an index in PostgreSQL, and how does it optimize query performance?
+Ans: Indexes play a pivotal role in optimizing database performance by facilitating faster data retrieval, and understanding their nuances is crucial for efficient query execution. We’ll delve into various types of indexes available in PostgreSQL, their functionalities, optimal use cases, and the impact they have on query performance.
+
+12. Explain the concept of a PostgreSQL view and how it differs from a table.
+ans: A view is a named query stored in the PostgreSQL database server. A view is defined based on one or more tables which are known as base tables, and the query that defines the view is referred to as a defining query. After creating a view, you can query data from it as you would from a regular table. Behind the scenes, PostgreSQL will rewrite the query against the view and its defining query, executing it to retrieve data from the base tables. Views do not store data except the materialized views. In PostgreSQL, you can create special views called materialized views that store data physically and periodically refresh it from the base tables. The materialized views are handy in various scenarios, providing faster data access to a remote server and serving as an effective caching mechanism.
